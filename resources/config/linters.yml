@@ -10,3 +10,7 @@ services:
     linter.yamllint:
         class: GrumPHP\Linter\Yaml\YamlLinter
         arguments: []
+
+    linter.twiglint:
+        class: GrumPHP\Linter\Twig\TwigLinter
+        arguments: []

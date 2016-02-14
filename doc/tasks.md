@@ -19,6 +19,7 @@ parameters:
         phpspec: ~
         phpunit: ~
         securitychecker: ~
+        twiglint: ~
         xmllint: ~
         yamllint: ~
 ```
@@ -39,12 +40,13 @@ Every task has it's own default configuration. It is possible to overwrite the p
 - [Phpspec](tasks/phpspec.md)
 - [Phpunit](tasks/phpunit.md)
 - [Security Checker](tasks/security_checker.md)
+- [TwigLint](tasks/twiglint.md)
 - [XmlLint](tasks/xmllint.md)
 - [YamlLint](tasks/yamllint.md)
 
 ## Metadata
 
-Every task has a pre-defined `metadata` key on which application specific options can be configured. 
+Every task has a pre-defined `metadata` key on which application specific options can be configured.
 For example:
 
 ```yaml
@@ -69,7 +71,7 @@ The higher the priority, the sooner the task will be executed.
 
 *Default: true*
 
-This option can be used to make a failing task non-blocking. 
+This option can be used to make a failing task non-blocking.
 By default all tasks will be marked as blocking.
 When a task is non-blocking, the errors will be displayed but the tests will pass.
 

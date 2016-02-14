@@ -109,3 +109,12 @@ services:
             - '@linter.yamllint'
         tags:
             - {name: grumphp.task, config: yamllint}
+
+
+    task.twiglint:
+        class: GrumPHP\Task\TwigLint
+        arguments:
+            - '@config'
+            - '@linter.twiglint'
+        tags:
+            - {name: grumphp.task, config: twiglint}

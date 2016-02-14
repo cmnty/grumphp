@@ -48,6 +48,7 @@ To make GrumPHP even more awesome, it will suggest installing some extra package
 - squizlabs/php_codesniffer : ~2.3
 - codeception/codeception : ~2.1
 - sensiolabs/security-checker : ~3.0
+- twig/twig : ~1.0
 
 GrumPHP will never push you into using a specific task. You can choose the tasks that fit your needs, and activate or
 deactivate any task in no time!
@@ -83,6 +84,7 @@ parameters:
         phpspec: ~
         phpunit: ~
         securitychecker: ~
+        twiglint: ~
         xmllint: ~
         yamllint: ~
     extensions: []
@@ -127,7 +129,6 @@ Following tasks are still on the roadmap:
 - phpcpd
 - phpdcd
 - robo
-- twig lint
 - symfony validation
 - gulp tests
 - npm tests
